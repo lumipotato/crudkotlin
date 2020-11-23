@@ -56,7 +56,7 @@ class MemberAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
         val btnTitle: String
 
         if (isEdit) {
-            actionBarTitle = "Ubah"
+            actionBarTitle = "Ubah Data"
             btnTitle = "Update"
 
             member?.let {
@@ -65,7 +65,7 @@ class MemberAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
             }
 
         } else {
-            actionBarTitle = "Tambah"
+            actionBarTitle = "Tambah Karyawan"
             btnTitle = "Simpan"
         }
 
