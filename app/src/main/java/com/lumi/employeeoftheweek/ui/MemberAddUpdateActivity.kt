@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.activity_member_add_update.*
 import java.text.SimpleDateFormat
 import java.util.*
 
-class MemberAddUpdateActivity : AppCompatActivity() {
+class MemberAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
 
     private var isEdit = false
     private var member: Member? = null
@@ -73,6 +73,7 @@ class MemberAddUpdateActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         btn_submit.text = btnTitle
+        btn_submit.setOnClickListener(this)
     }
 
     override fun onClick(view: View) {
@@ -153,7 +154,7 @@ class MemberAddUpdateActivity : AppCompatActivity() {
         alertDialogBuilder
             .setMessage(dialogMessage)
             .setCancelable(false)
-            .setPositiveButton("Ya") { dialog, id ->
+            .setPositiveButton("Ya") { _, _ ->
                 if (isDialogClose) {
                     finish()
                 } else {
@@ -168,7 +169,7 @@ class MemberAddUpdateActivity : AppCompatActivity() {
                     }
                 }
             }
-            .setNegativeButton("Tidak") { dialog, id -> dialog.cancel() }
+            .setNegativeButton("Tidak") { dialog, _ -> dialog.cancel() }
         val alertDialog = alertDialogBuilder.create()
         alertDialog.show()
     }
