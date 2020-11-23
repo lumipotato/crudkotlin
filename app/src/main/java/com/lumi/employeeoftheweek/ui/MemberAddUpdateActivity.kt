@@ -146,7 +146,7 @@ class MemberAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
             dialogTitle = "Batal"
             dialogMessage = "Apakah anda ingin membatalkan perubahan pada form?"
         } else {
-            dialogMessage = "Apakah anda yakin ingin menghapus item ini?"
+            dialogMessage = "Apakah anda yakin ingin menghapus karyawan ini?"
             dialogTitle = "Hapus Karyawan"
         }
         val alertDialogBuilder = AlertDialog.Builder(this)

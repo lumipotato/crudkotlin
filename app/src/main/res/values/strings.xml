@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">Employee of the week</string>
+    <string name="app_name">Our Employee</string>
     <string name="name">Nama</string>
     <string name="description">Jabatan</string>
     <string name="submit">Submit</string>
     <string name="delete">Hapus</string>
     <string name="date">Date</string>
+    <string name="image_splash">splash</string>
 </resources>
